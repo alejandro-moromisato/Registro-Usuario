@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <main>
+            <div class="titulo">
+                <h2>Registro de Usuario</h2>
+                <hr>
+            </div>
+            
+
+         <form action="" class="formulario" id="formulario">
+            <!-- grupo usuario -->
+            <div class="formulario-grupo" id="grupo-usuario">
+                <label for="usuario" class="formulario-label">Usuario</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="usuario" id="usuario" autocomplete="off">
+                    <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario-input-error">El usuario tiene que ser de 4 a 6 digitos</p>
+            </div>
+
+            <!-- grupo nombre -->
+            <div class="formulario-grupo" id="grupo-nombre">
+                <label for="nombre" class="formulario-label">Nombre</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="nombre" id="nombre" autocomplete="off">
+                    <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario-input-error">El usuario tiene que ser de 4 a 6 digitos</p>
+            </div>
+
+           <!-- grupo password -->
+            <div class="formulario-grupo" id="grupo-password">
+                <label for="password" class="formulario-label">Contraseña</label>
+                <div class="formulario-grupo-input">
+                <input type="password" class="formulario-input" name="password" id="password" autocomplete="off">
+                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                </div>
+            <p class="formulario-input-error">El usuario tiene que ser de 4 a 6 digitos</p>
+            </div>
+
+            <!-- grupo password2 -->
+            <div class="formulario-grupo" id="grupo-password2">
+                <label for="password2" class="formulario-label">Repetir Contraseña</label>
+                <div class="formulario-grupo-input">
+                    <input type="password" class="formulario-input" name="password2" id="password2" autocomplete="off">
+                    <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario-input-error">El usuario tiene que ser de 4 a 6 digitos</p>
+            </div>
+
+            <!-- grupo correo -->
+            <div class="formulario-grupo" id="grupo-correo">
+                <label for="correo" class="formulario-label">Correo Electrónico</label>
+                <div class="formulario-grupo-input">
+                    <input type="email" class="formulario-input" name="correo" id="correo" autocomplete="off">
+                    <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario-input-error">El usuario tiene que ser de 4 a 6 digitos</p>
+            </div>
+
+            <!-- grupo telefono -->
+            <div class="formulario-grupo" id="grupo-telefono">
+                <label for="telefono" class="formulario-label">Telefono</label>
+                <div class="formulario-grupo-input">
+                    <input type="text" class="formulario-input" name="telefono" id="telefono" autocomplete="off" >
+                    <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario-input-error">El usuario tiene que ser de 4 a 6 digitos</p>
+            </div>       
+
+            <!-- grupo terminos y condiciones -->
+            <div class="formulario-terminos" id="grupo-terminos">
+                <label class="formulario-label">
+                    <input type="checkbox" class="formulario-checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+            
+            <div class="formulario-mensaje" id="formulario-mensaje">
+                <p>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Error : Por favor rellene el formulario
+                </p>
+            </div>
+
+            <div class="formulario-grupo btn-enviar">
+                <button type="submit" class="formulario-btn">Enviar</button>
+                <p class="formulario-exito" id="formulario-exito">Formulario enviado exitosamente!!</p>
+            </div>
+        </form>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/formulario.js"></script>
+    </body>
+</html>
